@@ -8,7 +8,9 @@ class ProductsController < ApplicationController
     end
     
     def new
+        @product = Producto.new #crea producto nuevo
+
     end
-    
+
 
 end
