@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
     def index
+        @products = Product.all
     end
-    #declaramos la accion o metodo que es index
+
+    def show
+        @product = Product.find(params[:id])
+    end
 end
